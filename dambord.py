@@ -8,6 +8,9 @@ canvas.pack(expand=True, fill='both')
 
 length = 50
 switch = True
+
+# (i // l) % l
+
 for y in range(10):
     for x in range(10):
         canvas.create_rectangle(x * length, y * length, 500, 500, outline='', fill='red' if switch else 'blue')
